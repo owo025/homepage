@@ -1,0 +1,527 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>윤동주의 포트폴리오</title>
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/slick.css" rel="stylesheet" type="text/css">
+<link href="./css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="./css/main.css" rel="stylesheet" type="text/css">
+
+<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
+<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/jquery.colorbox-min.js"></script>
+
+<script>
+$(document).ready(function(){
+    //section1
+    $('.mainlogo').click(function(){
+        $('body,html').animate({'scrollTop':'1277'},500);
+        $('.header').addClass('on');
+            $('.about1').delay(1200).animate({'top':220,'opacity':1},450);
+            $('.about2').delay(1000).animate({'top':0,'opacity':1},450);
+            $('.about4').delay(1600).animate({'top':440,'opacity':1},450);
+            $('.about3').delay(1400).animate({'top':220,'opacity':1},450,function(){
+                        $('.skill.a2 li div').eq(0).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(1).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(2).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(3).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(5).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(6).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(7).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(8).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(10).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(11).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(12).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(13).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(15).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(16).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(17).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(18).delay(800).animate({'background-color':'#000'},500);
+            });
+    });
+    //
+    var bum = true
+    $('.clickplz').click(function(e){e.preventDefault();
+        if(bum==true){
+            $('.mainlogo img').animate({'width':500,'height':500});
+            $('.clickplz').animate({'bottom':200});
+            $('.mainlogo.a1').animate({'left':'20%'});
+            $('.mainlogo.a2').animate({'left':'70%'});
+            $('.listlist').animate({'left':'75%','opacity':1});
+            bum = false
+        }else{
+            $('.mainlogo img').animate({'width':400,'height':400});
+            $('.clickplz').animate({'bottom':280});
+            $('.mainlogo.a1, .mainlogo.a2').animate({'left':'50%'});
+            $('.listlist').animate({'left':'50%','opacity':0});
+            //$('.mainlogo.a2').animate({'left':'50%'});
+            bum = true
+        }
+    });
+    //메뉴
+     $('#btn_down1').click(function(){
+         $('body,html').animate({'scrollTop':'0'},500);/*인트로*/
+     });
+     $('#btn_down2').click(function(){
+         $('body,html').animate({'scrollTop':1081},500);/*어바웃미*/
+     });
+     $('#btn_down3').click(function(){
+         $('body,html').animate({'scrollTop':2300},500);/*디자인*/
+     });
+     $('#btn_down4').click(function(){
+         $('body,html').animate({'scrollTop':3600},500);/*웹&모바일*/
+     });
+     // $('#btn_down5').click(function(){
+     //     $('body,html').animate({'scrollTop':4321},500);/*컨텍*/
+     // });
+     $('#btn_down6').click(function(){
+         $('body,html').animate({'scrollTop':4900},500);
+     });
+
+      $('.btn_down1').click(function(){
+         $('body,html').animate({'scrollTop':'0'},500);/*인트로*/
+     });
+     $('.btn_down2').click(function(){
+         $('body,html').animate({'scrollTop':1081},500);/*어바웃미*/
+     });
+     $('.btn_down3').click(function(){
+         $('body,html').animate({'scrollTop':2300},500);/*디자인*/
+     });
+     $('.btn_down4').click(function(){
+         $('body,html').animate({'scrollTop':3600},500);/*웹&모바일*/
+     });
+     // $('.btn_down5').click(function(){
+     //     $('body,html').animate({'scrollTop':5340},500);/*컨텍*/
+     // });
+     $('.btn_down6').click(function(){
+         $('body,html').animate({'scrollTop':4900},500);
+     });
+     $('.btn_down7').click(function(){
+         $('body,html').animate({'scrollTop':6000},500);
+     });
+     //hover
+     $('.btn_page li').mouseenter(function(){
+         var num2 = $(this).index()
+         if(num2==0){
+             $(this).find('a').css('background-color','#00D8FF')
+         }else if(num2==1){
+             $(this).find('a').css('background-color','#00D8FF')
+         }else if(num2==2){
+             $(this).find('a').css('background-color','#00D8FF')
+         }else if(num2==3){
+             $(this).find('a').css('background-color','#00D8FF')
+         }else if(num2==4){
+             $(this).find('a').css('background-color','#00D8FF')
+         }else{
+             $(this).find('a').css('background-color','#00D8FF')
+         }
+     });
+     $('.btn_page li').mouseleave(function(){
+        $(this).find('a').css('background-color','white');
+     });
+    //hover유지
+    // if('body,html'>=) $('.btn_page li').
+    //윈도우 스크롤
+    $(window).scroll(function(){
+        var y = $(document).scrollTop()
+        if(y>=1277){
+            $('.header').addClass('on');
+            $('.about1').delay(200).animate({'top':220,'opacity':1},450);
+            $('.about2').delay(0).animate({'top':0,'opacity':1},450);
+            $('.about4').delay(600).animate({'top':440,'opacity':1},450);
+            $('.about3').delay(400).animate({'top':220,'opacity':1},450,function(){
+                        $('.skill.a2 li div').eq(0).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(1).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(2).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(3).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(5).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(6).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(7).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(8).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(10).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(11).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(12).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(13).delay(800).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(15).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(16).delay(200).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(17).delay(400).animate({'background-color':'#000'},500);
+                        $('.skill.a2 li div').eq(18).delay(800).animate({'background-color':'#000'},500);
+            });
+        }else{
+            $('.header').removeClass('on');
+        }
+    });
+    //down
+    $('.btn_downa1').click(function(){
+        $('body,html').animate({'scrollTop':1277},800);
+    });
+    //포토샵호버
+     $('.project li').mouseenter(function(){
+         $(this).find('.tit').stop().animate({'bottom':0},300);
+     });
+     $('.project li').mouseleave(function(){
+         $(this).find('.tit').stop().animate({'bottom':-30},300);
+     });
+     //포토샵슬라이드
+     $('.sec3_inmenu li').click(function(e){e.preventDefault();
+        var pag = $(this).index()
+        console.log(pag);
+        if(pag==0){
+            $('.project').animate({'left':0,'top':0});
+            $('.sec3_inmenu li a').removeClass('on');
+            $(this).find('a').addClass('on');
+        }else if(pag==1){
+            $('.project').animate({'left':-930,'top':0});
+            $('.sec3_inmenu li a').removeClass('on');
+            $(this).find('a').addClass('on');
+        }else if(pag==2){
+            $('.project').animate({'left':0,'top':-690});
+            $('.sec3_inmenu li a').removeClass('on');
+            $(this).find('a').addClass('on');
+        }else{
+            $('.project').animate({'left':-930,'top':-690});
+            $('.sec3_inmenu li a').removeClass('on');
+            $(this).find('a').addClass('on');
+        }
+     });
+
+     $('.bigmenu li').click(function(e){
+            e.preventDefault();
+            $('.bigmenu li').removeClass('on');
+            $(this).addClass('on');
+            var num=$(this).index();
+            console.log(num);
+            $('.content .listbig').hide();
+            $('.content .listbig').eq(num).show();
+        });
+
+
+      $('.listbig li').click(function(e){
+            e.preventDefault();
+            $('content_inner .listmin1').hide();
+            $('content_inner .listmin1').eq(num).show();
+        });
+
+
+
+    //모달팝업코드
+    $('.project li').click(function(e){e.preventDefault();
+        var num = $(this).index()
+        console.log(num);
+        $('.modal').fadeIn();
+        $('.modal li').eq(num).show();
+        $('body').css('overflow','hidden');
+    });
+    $('.btn_close').click(function(e){e.preventDefault();
+        $('.modal li').hide();
+        $('.modal').fadeOut();
+        $('body').css('overflow','auto');
+    });
+    //http://www.ticketmonster.co.kr/deal/390744278?is_adult=N&adult_type=N&keyword=%EC%99%B8%EC%9E%A5%ED%95%98%EB%93%9C+1TB
+
+    $('.group1').colorbox({rel:'group1'});
+
+
+    $(document).ready(function(){
+    $('.slider-for').slick({
+        autoplay:false,
+        autoplaySpeed:1000,
+        swipe:false,
+        fade:true,
+        dots:true
+        });     
+
+
+     });
+
+    //위도우 스크롤
+    $(window).scroll(function(){
+        var y = $(document).scrollTop();
+        if (y>=1001) {
+            $('.header').addClass('on');
+            $('.about_01').animate({'top':'50%'},500);
+            $('.about_02').delay(450).animate({'left':100},500);
+            $('.about_03').delay(900).animate({'bottom':0},500);
+            $('.about_04').delay(1350).animate({'right':100},500,function(){
+                $('.skill_01').animate({'margin-left':'-10'},800);
+                $('.skill_02').delay(800).animate({'margin-left':'-5'},800);
+                $('.skill_03').delay(1600).animate({'margin-left':'-5'},800);
+                $('.skill_04').delay(2400).animate({'margin-left':'-15'},800);
+            });
+        }
+        else{
+            $('.header').removeClass('on');
+        }
+    });
+});
+
+/*section3~4*/
+    $('.group1').colorbox({
+        rel:"nofollow"
+    });
+
+    $(document).ready(function(){
+        $('.mo_1').slick({
+            autoplay:false,
+            autoplaySpeed:2500,
+            dots:true,
+            slidesToShow:2,
+            slidesToScroll:2
+        });     
+     });
+    
+
+
+</script>
+</head>
+<body>
+
+    <ul class="btn_page">
+        <li id="btn_down1"><a href="#"><span>top</span></a></li>
+        <li id="btn_down2"><a href="#"><span>about_me</span></a></li>
+        <li id="btn_down3"><a href="#"><span>disign</span></a></li>
+        <li id="btn_down4"><a href="#"><span>web</span></a></li>
+        <li id="btn_down6"><a href="#"><span>Responsive web</span></a></li>
+        <!-- <li id="btn_down5"><a href="#"><span>CONTACT</span></a></li> -->
+        
+    </ul><!-- btn_page -->
+    <div class="section1">
+        <div class="main_wrap">
+            <h1 class="logo"><img src="images/YD_logo_black.png"></h1>
+            <h3><h2><img src="images/GIF3.gif"></h2></h3>
+            <h4><img src="images/YoonDongJu.png"><br><span class="por"><img src="images/portfolio.png"></span></h4>
+
+        </div><!-- main_wrap -->
+    </div><!-- section1 -->
+
+
+    <div class="section2">
+        <div class="header">
+            <ul>
+                <li class="logo btn_down1"><a href="#"><img src="images/YD_logo_black.png"></a></li>
+                <li class="btn_down2"><a href="#">About me</a></li>
+                <li class="btn_down3"><a href="#">Gallery</a></li>
+                <li class="btn_down4"><a href="#">Web | Mobile</a></li>
+                <li class="btn_down7"><a href="#">Contact</a></li>
+            </ul>
+        </div><!-- header -->
+        <div class="about">
+            <div class="about_01">
+               
+                <p>윤동주<br>
+                1999.02.05<br>
+                서울시 서대문구 홍은동<br>
+                010.7332.5710<br>
+                shemf1004@naver.com</p>
+            </div>
+            <div class="about_02">
+            
+                <p>세명컴퓨터 고등학교<br>
+                스마트콘텐츠과 졸업예정<br>
+                대양직업전문학교<br>
+                웹 &amp; 디지털디자이너 과정 수료예정<br></p>
+            </div>
+            <div class="about_03">
+           
+                <p>정보처리 기능사<br>
+                그래픽스 기능사<br>
+                웹 디자인 기능사<br>
+                GTQ ,GTQ-i 1급<br>       
+                ITQ Excel, PPT, Word (A)<br></p>
+            </div>
+            <div class="about_04">
+            
+                <div class="skill">
+                    <div>Ps
+                        <div class="skill_bar"><div class="skill_01"></div></div>
+                    </div>
+                    <div>Ai
+                        <div class="skill_bar"><div class="skill_02"></div></div>
+                    </div>
+                    <div>웹표준
+                        <div class="skill_bar"><div class="skill_03"></div></div>
+                    </div>
+                    <div>jQ
+                        <div class="skill_bar"><div class="skill_04"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery">
+        <h1><img src="images/Gallery.png"></h1>
+    </div>
+
+
+    <div class="section3">
+    <div class="s3wrap">
+        <div class="section3_inner">
+          <ul class="bigmenu">
+              <li class='btn on'><a class="btnps" href="#">Ps</a></li>
+              <li class='btn on'><a class="btnai" href="#">Ai</a></li>
+          </ul><!--bigmenu-->
+
+            <div class="content">
+                <ul class='listbig list1'>
+                    <li><a class="group1 p1 on" href="images/ps/ps1.jpg"><img src="images/ps/ps1_1.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps2.jpg"><img src="images/ps/ps2_2.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ps/ps3.jpg"><img src="images/ps/ps3_3.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ps/ps4.png"><img src="images/ps/ps4_4.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ps/ps5.jpg"><img src="images/ps/ps5_5.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps6.jpg"><img src="images/ps/ps6_6.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ps/ps7.jpg"><img src="images/ps/ps7_7.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ps/ps8.jpg"><img src="images/ps/ps8_8.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps9.jpg"><img src="images/ps/ps9_9.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ps/ps10.jpg"><img src="images/ps/ps10_10.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ps/ps11.png"><img src="images/ps/ps11_11.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ps/ps12.jpg"><img src="images/ps/ps12_12.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ps/ps13.jpg"><img src="images/ps/ps13_13.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps14.jpg"><img src="images/ps/ps14_14.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ps/ps15.jpg"><img src="images/ps/ps15_15.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ps/ps16.jpg"><img src="images/ps/ps16_16.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ps/ps17.jpg"><img src="images/ps/ps17_17.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps18.jpg"><img src="images/ps/ps18_18.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ps/ps19.jpg"><img src="images/ps/ps19_19.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ps/ps20.jpg"><img src="images/ps/ps20_20.jpg"><h3>click</h3></a></li>
+                    
+                   
+
+                </ul><!--list ps-->
+
+                 <ul class='listbig list2'>
+                    <li><a class="group1 p1 on" href="images/ai/1.jpg"><img src="images/ai/1_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ai/2.jpg"><img src="images/ai/2_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ai/3.jpg"><img src="images/ai/3_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/4.jpg"><img src="images/ai/4_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ai/5.jpg"><img src="images/ai/5_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ai/6.png"><img src="images/ai/6_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ai/7.png"><img src="images/ai/7_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/8.png"><img src="images/ai/8_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ai/9.png"><img src="images/ai/9_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ai/10.png"><img src="images/ai/10_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/11.png"><img src="images/ai/11_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ai/12.jpg"><img src="images/ai/12_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ai/13.jpg"><img src="images/ai/13_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ai/14.jpg"><img src="images/ai/14_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/15.jpg"><img src="images/ai/15_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p1 on" href="images/ai/16.jpg"><img src="images/ai/16_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p2 on" href="images/ai/17.jpg"><img src="images/ai/17_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p3 on" href="images/ai/18.jpg"><img src="images/ai/18_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/19.png"><img src="images/ai/19_m.jpg"><h3>click</h3></a></li>
+                    <li><a class="group1 p4 on" href="images/ai/20.jpg"><img src="images/ai/20_m.jpg"><h3>click</h3></a></li>
+                </ul><!--list ai-->
+            </div><!-- content -->
+
+            
+        </div><!-- section5_inner --></div>
+    </div><!-- section3 -->
+
+
+    <div class="Web">
+        <h1><img src="images/WebPage.png"></h1>
+    </div>
+
+    <div class="section4">  
+        <div class="section4_in">  
+            <div class="web_l">
+                <img id="macimg" src="images/mac.png" alt="맥">    
+                     <div class="slider-for">
+                        <div class="visual1"><a href="http://shemf1004.dothome.co.kr/ba/" target="_blank"><span></span><img src="images/web/web_m (1).png"></a></div>
+
+                        <div class="visual2"><a href="http://54.200.153.209/canon/" target="_blank"><img src="images/web/web_m (2).png"></a></div>
+
+                        <div class="visual3"><a href="http://54.200.153.209/coffiin/" target="_blank"><img src="images/web/web_m (3).png"></a></div>
+
+                        <div class="visual5"><a href="http://54.200.153.209/resportsac/" target="_blank"><img src="images/web/web_m (5).png"></a></div>
+
+                        <div class="visual6"><a href="http://shemf1004.cafe24.com/user/myy1213/#" target="_blank"><img src="images/web/web_m (6).png"></a></div>
+
+                        <div class="visual7"><a href="http://54.200.153.209/pb/" target="_blank"><img src="images/web/web_m (7).jpg"></a></div>
+
+                        <div class="visual8"><a href="http://shemf1004.dothome.co.kr/ibk/# " target="_blank"><img src="images/web/web_m (8).png"></a></div>
+
+                        <div class="visual9"><a href="http://shemf1004.dothome.co.kr/djflsdl/ " target="_blank"><img src="images/web/web_m (9).png"></a></div>
+
+                        <div class="visual10"><a href="http://54.200.153.209/samyang/" target="_blank"><img src="images/web/web_m (10).png"></a></div>
+
+                        <div class="visual11"><a href="http://54.200.153.209/crame/" target="_blank"><img src="images/web/web_m (4).png"></a></div>
+                    </div>
+
+                  
+            </div><!--web_1-->
+
+           
+         
+        </div><!-- section4_in-->
+
+    </div><!-- section4 -->
+
+    <div class="section6">
+       <!--  <dir class="section6_in"> -->
+          
+    <h1><img src="images/RESPONSIVEWEB.png"></h1>
+
+    <div class="mobile_wrap">
+          <h1><img src="images/r-web.png"></h1>
+
+
+   
+                <div class="mo_slider">
+                    <div class="mo_1">
+                        <div class="m1"><a href="http://shemf1004.cafe24.com/user/spa1229/" target="_blank"><img src="images/rweb/m1.jpg" alt=""></a></div>
+                        <div class="mo1"><a href="http://shemf1004.cafe24.com/user/spa1229/" target="_blank"><img src="images/rweb/m_1.jpg" alt=""></a></div>
+                        
+                        <div class="m1"><a href="http://54.200.153.209/sc/" target="_blank"><img src="images/rweb/m2.jpg" alt=""></a></div>
+                        <div class="mo1"><a href="http://54.200.153.209/sc/" target="_blank"><img src="images/rweb/m_2.jpg" alt=""></a></div>
+
+                        <div class="m1"><a href="http://54.200.153.209/time/" target="_blank"><img src="images/rweb/m3.jpg" alt=""></a></div>
+                        <div class="mo1"><a href="http://54.200.153.209/time/" target="_blank"><img src="images/rweb/m_3.jpg" alt=""></a></div>
+
+                        <div class="m1"><a href="#"><img src="images/rweb/m4.jpg" alt=""></a></div>
+                        <div class="mo1"><a href="#"><img src="images/rweb/m_4.jpg" alt=""></a></div>
+                    </div>
+                </div> <!--mo_slider end-->
+
+
+            
+
+    </div><!--moblie_wrap end-->
+
+    <div class="mo_btn">
+        <ul>
+            <li><a href="http://shemf1004.cafe24.com/user/spa1229/" target="_blank">LAGO</a></li>
+            <li><a href="http://54.200.153.209/sc/" target="_blank">SC</a></li>
+            <li><a href="http://54.200.153.209/time/" target="_blank">TIME</a></li>
+            <li><a href="http://54.200.153.209/dog/" target="_blank">DOG</a></li>
+        </ul>
+    </div><!--mo_btn end-->
+
+</div><!--section6 end-->
+
+        
+  
+
+    <div class="section5">
+        <div class="section5_in">
+        <h1><img src="images/Contact.png"></h1>
+            <div class=box_wrap>
+                <div class="call"><p><i class="fa fa-phone" aria-hidden="true"></i><br><p>010 7332 5710</p></p></div>
+                <div class="mail"><p><i class="fa fa-envelope-o" aria-hidden="true"></i><br><p>
+                shemf1004@naver.com</p></p></div>
+            </div>
+        </div>
+    </div><!-- section5 -->
+
+</body>
+</html>

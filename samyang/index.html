@@ -1,0 +1,400 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>윤동주 삼양식품</title>
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/slick.css" rel="stylesheet" type="text/css">
+<link href="./css/main.css" rel="stylesheet" type="text/css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script>
+	$(document).ready(function(){
+		
+		$('.middle_header .middle_header_inner .gnb li').mouseenter(function(){
+			$('.bottom_header').stop().slideDown();
+		});
+		$('.middle_header .middle_header_inner .gnb li').mouseleave(function(){
+			$('.bottom_header').stop().slideUp();
+		});
+		$('.bottom_header').mouseenter(function(){
+			$(this).stop().slideDown();
+		});
+		$('.bottom_header').mouseleave(function(){
+			$(this).stop().slideUp();
+		});
+		$('.visual').slick({
+			autoplay:true,
+			autoplaySpeed:2000,
+			swipe:false,
+			fade:true,
+			dots:true,
+  		});
+
+        $('.move1').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            swipe:false,
+            arrows:false,
+            dots:true,
+        });
+
+        $('.move2').slick({
+            autoplay:true,
+            autoplaySpeed:3000,
+            swipe:false,
+            dots:true,
+            slidesToShow:5,
+            slidesToScroll:2,
+        });
+        //section3
+        $('.section3 .banner_left .bottom').slick({
+            autoplay:true,
+            autoplaySpeed:2000,
+            swipe:false,
+            dots:true,
+            arrows:false,
+        });
+        //section3_영상재생
+       $('.section3 .banner_center .top').click(function(e){
+            e.preventDefault();
+            $('.section3 .banner_center .video_play').show();
+            $('.cover').show();
+       });
+       $('.section3 .banner_center .video_play .btn_close').click(function(){
+            $('.section3 .banner_center .video_play').hide(); 
+            $('.cover').hide();
+       });
+        //footer
+            var sw=true;
+        $('.family button').click(function(){
+            if(sw==true){
+                $('.family ul').slideToggle();
+                sw=false;
+            }else{
+                $('.family ul').slideDown();
+                sw=true;
+            } 
+        });
+	});
+</script>
+</head>
+
+<body>
+    <div class="cover"></div>
+	<div class="top_header">
+    	<div class="top_header_inner">
+        	<p>행복과 사랑이 넘치는 <strong>삼양식품</strong> 입니다</p>
+            <div class="header_menu">
+                <div class="sns">
+                    <a href="#"><img src="./images/ico_sns_blog.png" alt=""></a></li>
+                    <a href="#"><img src="./images/ico_sns_insta.png" alt=""></a></li>
+                    <a href="#"><img src="./images/ico_sns_twitter.png" alt=""></a></li>
+                    <a href="#"><img src="./images/ico_sns_facebook.png" alt=""></a></li>
+                </div>
+                <ul class="util">
+                    <li><a href="#"><img src="./images/gnb_shop.gif" alt=""></a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li class="last"><a href="#">KOR</a></li>
+                </ul>
+            </div><!--header_menu//-->
+        </div><!--top_header_inner//-->
+    </div><!--top_header//-->
+    <div class="middle_header clearfix">
+        <div class="middle_header_inner clearfix">
+            <h1><a href="index.html">삼양식품</a></h1>
+            <ul class="gnb">
+                <li><a href="#">브랜드</a></li>
+                <li><a href="#">삼양패밀리</a></li>
+                <li><a href="#">홍보관</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">회사소개</a></li>
+            </ul>
+        </div><!--"middle_header_inner//-->
+    </div><!--middle_header//-->
+    <div class="bottom_header">
+    	<div class="bottom_header_inner">
+        	<ul class="depth2">
+            	<li><a href="#">삼양라면</a></li>
+                <li><a href="#">불닭볶음면</a></li>
+                <li><a href="#">갓시리즈</a></li>
+                <li><a href="#">별뽀빠이</a></li>
+                <li><a href="#">삼양유기농우유</a></li>
+                <li><a href="#">제품 전체보기</a></li>
+            </ul>
+            <ul class="depth2">
+                <li><a href="#">삼양 목장</a></li>
+                <li><a href="#">호면당</a></li>
+                <li><a href="#">삼양새아침</a></li>
+                <li><a href="#">제주우유</a></li>
+            </ul>
+            <ul class="depth2">
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">홍보영상</a></li>
+                <li><a href="#">광고영상</a></li>
+                <li><a href="#">호치와 친구들</a></li>
+                <li><a href="#">삼양역사관</a></li> 
+            </ul>
+            <ul class="depth2">  
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">아이디어</a></li>
+                <li><a href="#">레시피</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">삼양 사연</a></li>
+            </ul>
+            <ul class="depth2">
+                <li><a href="#">삼양식품</a></li>
+                <li><a href="#">계열사</a></li>
+                <li><a href="#">공장</a></li>
+                <li><a href="#">사회공헌</a></li>
+                <li><a href="#">오시는길</a></li>              
+            </ul>
+        </div><!--bottom_header_inner//-->
+    </div><!--bottom_header//-->
+    <div class="main">
+    	<div class="visual">
+          <div class="visual1"><a href="#"></a></div>
+          <div class="visual2"><a href="#"></a></div>
+          <div class="visual3"><a href="#"></a></div>
+          <div class="visual4"><a href="#"></a></div>
+          <div class="visual5"><a href="#"></a></div>
+		</div>
+        <div class="quick_menu">
+		<ul>
+		<li><a href="#">홍보관</a></li>
+		<li><a href="#">역사관</a></li>
+		<li><a href="#">레시피</a></li>
+		<li><a href="#">문의하기</a></li>
+		</ul>
+		<a href="#" class="top_btn"></a>
+	</div><!--퀵메뉴//-->
+    <div class="section1 clearfix">
+        <div class="section1_inner clearfix">
+            <div class="new clearfix">
+                <ul class="move1 clearfix">
+                    <li><a href="">
+                        <img src="./images/20160905114253185028.png" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="./images/20161020104255737017.png" alt="">
+                    </a></li>
+                    <li><a href="">
+                        <img src="./images/20161122150026472007.png" alt="">
+                    </a></li>
+                </ul>
+            </div><!--new-->
+            <div class="tit">
+                <h2>삼양제품소개</h2>
+                <h3>Delicious Together!</h3>
+                <p>다양한 제품을<br>한 곳에서 즐기세요!</p>
+                <ul class="list clearfix">
+                    <li><h4>라면류</h4><a href="#" class="list1"></a></li>
+                    <li><h4>스낵류</h4><a href="#" class="list2"></a></li>
+                    <li><h4>유제품류</h4><a href="#" class="list3"></a></li>
+                    <li><h4>장/소스류</h4><a href="#" class="list4"></a></li>
+                </ul>
+            </div><!--tit-->
+            <div class="product clearfix">
+                <ul class="move2 clearfix">
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160905114253185028.png" alt="">
+                            <p>화끈하면서 걸쭉한 신개념 국물라면</p>
+                            <h2>불닭볶음탕면</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160905113829584026.png" alt="">
+                            <p>치즈의 풍미가 살아있는 매운맛</p>
+                            <h2>치즈불닭볶음면</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160830115314101005.png" alt="">
+                            <p>초강력 화끈한 매운맛!</p>
+                            <h2>불닭볶음면</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160830115255066003.png" alt="">
+                            <p>진한 햄맛이 느껴지는 원조의 맛</p>
+                            <h2>삼양라면</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160830130733238013.png" alt="">
+                            <p>무더운 여름철 차갑게 비벼먹는</p>
+                            <h2>쿨불닭볶음면</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160828181905541057.jpg" alt="">
+                            <p>갓 볶아낸 짜장의 신</p>
+                            <h2>갓짜장</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20161117094408000001.png" alt="">
+                            <p>갓 끓여낸 짬뽕의 신</p>
+                            <h2>갓짬뽕</h2>    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./images/20160828180757748049.jpg" alt="">
+                            <p>갓 비벼낸 비빔면의 신</p>
+                            <h2>갓비빔</h2>    
+                        </a>
+                    </li>
+                </ul>
+            </div><!--product-->
+        </div><!--section1_inner//-->     
+    </div><!--section1//-->
+
+    <div class="section2 clearfix">
+        <div class="section2_inner">
+            <h2>삼양 패밀리</h2>
+            <p>삼양식품의 관계·계열사를 소개합니다.</p>
+            <div class="banner_wrap clearfix">
+                <div class="banner1">
+                    <h3>대관령 삼양 목장</h3>
+                    <p class="txt">600만평의 광활한 대지<br>푸르른 대관령 무공해 천연 목장</p>
+                    <a href="#"><img src="./images/btn_more_fam01.png" alt=""></a>
+                </div>
+                <div class="banner1 banner2">
+                    <h3>삼양 새아침</h3>
+                    <p class="txt">식생활 문화의 밝은 햇살</p>
+                    <a href="#"><img src="./images/btn_more_fam02.png" alt=""></a>
+                </div>
+                <div class="banner3">
+                    <div class="banner1 banner3_top">
+                        <h3>호면당</h3>
+                        <p class="txt">품격있는<br>프리미엄 누들 하우스</p>
+                        <a href="#"><img src="./images/btn_more_fam03.png" alt=""></a>
+                    </div>
+                    <div class="banner1 banner3_bottom">
+                        <h3>삼양 제주 우유</h3>
+                        <p class="txt">자연에 가장 가까운 맛!</p>
+                        <a href="#"><img src="./images/btn_more_fam04.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div><!--section2_inner//-->
+    </div><!---------------------section2//------------------------------------>
+
+    <div class="section3 clearfix">
+        <div class="section3_inner clearfix">
+            <h2>삼양 커뮤니티</h2>
+            <p class="sub">삼양식품은 여러분과 함께 맛있는 세상을 만들어갑니다.</p>
+            <ul class="sns clearfix">
+                <li><a href="#"><img src="./images/ico_facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_insta.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_blog.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_twitter.png" alt=""></a></li>
+            </ul>
+            <div class="banner_wrap">
+                <div class="banner_left">
+                    <div class="top">
+                        <img src="./images/ico_facebook.png" alt="페이스북">
+                        <p><a href="">모두가 조용해지는 밥볶는 순간.<br>불닭볶음탕밥 은 사랑이쥬 ˘◡˘</a></p>
+                        <span class="date">2016.12.08</span>
+                        <a href="" class="more"><img src="./images/btn_more_sns.gif" alt="더보기"></a>
+                    </div>
+                    <div class="bottom">
+                        <div><img src="./images/20160921094655872002.jpg" alt=""></div>
+                        <div><img src="./images/20161109133650459050.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="banner_center">
+                    <div class="top">
+                        <a href="#">
+                        <img src="./images/main_video_thumb.jpg" alt="">
+                        <span class="cover"></span>
+                        <div class="video"><img src="./images/video_play.png"></div>
+
+                        </a>
+                    </div>
+                    <div class="video_play">
+                        <button type="button" class="btn_close">닫기버튼</button>
+                        <iframe width="907" height="573" src="https://www.youtube.com/embed/3n8Dtth6jGg" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="bottom">
+                        <h3>삼양 사연</h3>
+                        <p class="txt">삼양식품과 함께한 <br>
+                        여러분의 다양한 사연을 기다립니다.</p>
+                        <a href="#"><img src="./images/btn_more_comm01.png"></a>
+                    </div>
+                </div>
+                <div class="banner_right">
+                    <div class="top">
+                        <h3>레시피</h3>
+                        <a href="#" class="link_more"><img src="./images/btn_recipe.png"></a>
+                        <p class="txt">불닭볶음탕면 : :맛있게 먹는법 공개!</p>
+                        <span class="date">2016.09.02</span>
+                    </div>
+                    <div class="center">
+                        <h3>공지사항</h3>
+                        <a href="#" class="link_more"><img src="./images/btn_notice.png"></a>
+                        <p class="txt">★★ 2016. 9월 커뮤니티 정기 이벤트 당첨자 발. .</p>
+                        <span class="date">2016.10.05</span>
+                    </div>
+                    <div class="bottom">
+                        <h3>삼양 맛샵 오픈</h3>
+                        <p class="txt">삼양식품의 다양한 제품을 만나보세요.</p>
+                        <a href="#"><img src="./images/btn_more_comm02.png"></a>
+                    </div>
+                </div>
+            </div><!--banner_wrap-->
+        </div><!--section3_inner-->
+    </div><!--section3-->
+    </div><!-----------------------------------main//---------------------------------------->
+    <div class="footer ">
+        <div class="footer_inner clearfix">
+            <h2><img src="./images/logo2.png"></h2>
+            <div class="copy">   
+               <ul class="info clearfix">
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">고객지원</a></li>
+                    <li><a href="#">IR</a></li>
+                    <li><a href="#">인재채용</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                </ul>
+                <ul class="address clearfix">
+                    <li>서울특별시 성북구 오패산로3길 104(하월곡동) Tel. 02-940-3000Fax. 02-942-4350</li>
+                    <li>※ 고객지원센터 : 080-940-3333 (무료상담전화)</li>
+                    <li>상담시간 (평일) 오전 9시 - 오후 6시 [점심시간 : 오후 12시 - 1시 ]</li>
+                    <li>Copyright © 2016 Samyangfoods. All rights reserved.</li>
+                </ul>
+            </div><!--copy-->
+            <div class="footer_right">
+            <ul class="sns">
+                <li><a href="#" class="blog">블로그</a></li>
+                <li><a href="#" class="insta">인스타그램</a></li>
+                <li><a href="#" class="twi">트위터</a></li>
+                <li><a href="#" class="face">페이스북</a></li>
+            </ul>
+            <div class="family">
+                <button type="button">Family Site</button>
+                <ul class="f_list">
+                    <li><a href="#">삼양맛샵</a></li>
+                    <li><a href="#">삼양목장</a></li>
+                    <li><a href="#">호면당</a></li>
+                    <li><a href="#">삼양새아침</a></li>
+                    <li><a href="#">제주우유</a></li>
+                </ul>
+            </div><!--family-->
+            </div>
+         </div><!---------footer_inner--------------->  
+    </div><!------------------------footer//---------------------------------------->
+</body>
+</html>

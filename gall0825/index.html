@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>아코디언</title>
+<link href="./css/common.css" rel="stylesheet" type="text/css">
+<link href="./css/main.css" rel="stylesheet" type="text/css">
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+	// menu
+	var menu1 = $('.menu li:nth-child(1) a');
+	var menu2 = $('.menu li:nth-child(2) a');
+	var menu3 = $('.menu li:nth-child(3) a');
+	var menu4 = $('.menu li:nth-child(4) a');
+	var menu5 = $('.menu li:nth-child(5) a');
+	var menu6 = $('.menu li:nth-child(6) a');
+	// galley
+	var all = $('.all');
+	var mar = $('.mar');
+	var pho = $('.pho');
+	var med = $('.med');
+	var pri = $('.pri');
+	var web = $('.web');
+
+	menu1.click(function(){
+		all.fadeIn(600);
+		event.prevntDefault();
+	});
+	menu2.click(function(){
+		all.fadeOut(100);
+		mar.delay(100).fadeIn(100).animate({'top':'0'});
+		event.prevntDefault();
+	});
+	menu3.click(function(){
+		all.fadeOut(100);
+		pho.delay(100).fadeIn(100).animate({'top':'0'});
+		event.prevntDefault();
+	});
+	menu4.click(function(){
+		all.fadeOut(100);
+		med.delay(100).fadeIn(100).animate({'top':'0'});
+		event.prevntDefault();
+	});
+	menu5.click(function(){
+		all.fadeOut(100);
+		pri.delay(100).fadeIn(100).animate({'left':'0','top':'0'});
+		$('.g7').delay(100).fadeIn(100).animate({'left':'250','top':'0'});
+		event.prevntDefault();
+	});
+	menu6.click(function(){
+		all.fadeOut(100);
+		web.delay(100).fadeIn(100).animate({'left':'0','top':'0'});
+		$('.g9').delay(100).fadeIn(100).animate({'left':'500','top':'0'});
+		event.prevntDefault();
+	});
+});
+</script>
+</head>
+<body>
+	<div class="work">
+		<h1>OUR WORK</h1>
+		<div class="boder"></div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">All</a></li>
+				<li><a href="#">Marketing</a></li>
+				<li><a href="#">PhotoGraphy</a></li>
+				<li><a href="#">Media</a></li>
+				<li><a href="#">Print</a></li>
+				<li><a href="#">Web Design</a></li>
+			</ul>
+		</div>
+		<ul class="galley">
+			<li class="all g0 mar">
+				<img src="./images/9.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g1 mar">
+				<img src="./images/6.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g2 mar pho">
+				<img src="./images/10.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g3 pho med">
+				<img src="./images/2.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g4 pho med">
+				<img src="./images/1.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g5 med web">
+				<img src="./images/3.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g6 pri">
+				<img src="./images/8.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g7 pri">
+				<img src="./images/5.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g8 pri">
+				<img src="./images/7.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+			<li class="all g9 web">
+				<img src="./images/4.jpg" alt="">
+				<div class="txt">
+					<h3>Retina Project</h3>
+					<p>2016.12.29</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

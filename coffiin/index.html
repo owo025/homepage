@@ -1,0 +1,556 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>y1214커핀그루나루</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href='css/slick.css' rel='stylesheet' type='text/css'>
+<link href="css/layout.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src='js/jquery-1.12.4.min.js'></script>
+<script src='js/jquery-ui.min.js'></script>
+<script src='js/slick.min.js'></script>
+<script>
+	$(document).ready(function(){
+		$('.visual').slick({
+			autoplay:true,
+			autoplaySpeed:1500,
+			dots:true
+		});
+        $('.btn_clse').click(function(){
+            $('.popup').slideUp();
+        });
+        $('.gnb').mouseenter(function(){
+            $('.header').stop().animate({'height':370});
+            $('.depth2').show();
+        });
+        $('.gnb').mouseleave(function(){
+            $('.header').stop().animate({'height':102});
+            $('.depth2').hide();
+        });
+        $('.header').mouseenter(function(){
+            $('.header').stop().animate({'height':370});
+            $('.depth2').show();
+        });
+        $('.header').mouseleave(function(){
+            $('.header').stop().animate({'height':102});
+            $('.depth2').hide();
+        });
+
+        // $('.btn_tab li').click(function(e){
+        //     e.preventDefault();/*위로 올라가는거 막음*/
+        //     $('.btn_tab li').removeClass('on')
+        //     $(this).addClass('on')
+        //     var num = $(this).index();
+        //     console.log(num);
+
+        //     $('.content .list').hide();
+        //     $('.content .list').eq(num).show();
+
+        // });
+           //탭메뉴
+        $('.tab_btn li').click(function(e){
+            e.preventDefault();
+            $('.tab_btn li').removeClass('on');
+            $(this).addClass('on');
+            var num=$(this).index();
+            console.log(num);
+            $('.content .list').hide();
+            $('.content .list').eq(num).show();
+        });
+	});/*제이쿼리시작*/
+</script>
+
+</head>
+
+<body>
+	<div class='popup'>
+    	<div class='popup_inner'>
+    	<a href='#'>
+        	<button class='btn_clse' type='button'><img src='images/btn_top_banner_close.png' alt='닫기'></button>
+    	</a>
+        </div>
+    </div>
+    <!--/popup-->
+    <div class='header_wrap'>
+    	<div class='header'>
+        	<div class='header_inner'>
+            	<ul class='utill'>
+                	<li><a href='#'>로그인</a></li>
+                    <li><a href='#'>회원가입</a></li>
+                    <li class='utill3'><a href='#'>아카데미</a></li>
+                    <li class='utill4'><a href='#'>커핀그루나루 APP</a></li>
+                </ul>
+                <h1><a href='index.html'><img src='./images/logo.png' alt='커핀그루나루'></a></h1>
+                <ul class='gnb'>
+                	<li><a href='sub1.html'>MENU</a>
+                    	<ul class='depth2'>
+                        	<li><a href='sub1.html'>New & Best</a></li>
+                            <li><a href='#'>Theme Menu</a></li>
+                            <li><a href='#'>Coffee</a></li>
+                            <li><a href='#'>Theme Menu</a></li>
+                            <li><a href='#'>Tea & Beverage</a></li>
+                            <li><a href='#'>Theme Menu</a></li>
+                            <li><a href='#'>Wine</a></li>
+                            <li><a href='#'>Dessert</a></li>
+                            <li><a href='#'>MD</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='sub2.html'>STORE</a>
+                    	<ul class='depth2'>
+                        	<li><a href='#'>매장찾기</a></li>
+                            <li><a href='#'>신규매장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='sub3.html'>EVENT</a>
+                    	<ul class='depth2'>
+                        	<li><a href='sub1-3.html'>진행중인 이벤트</a></li>
+                            <li><a href='sub1-2.html'>종료된 이벤트</a></li>
+                            <li><a href='#'>당첨자 발표</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='sub4.html'>MEMBERSHIP</a>
+                    	<ul class='depth2'>
+                        	<li><a href='#'>퍼플멤버스 소개</a></li>
+                            <li><a href='#'>퍼플멤버스 혜택</a></li>
+                            <li><a href='#'>퍼플멤버스 충전형<br>/기프트 카드</a></li>
+                            <li><a href='#'>자주 묻는 질문</a></li>
+                        </ul>
+                    </li>
+                    <li class='_a_'><a href='sub5.html'>COMMUNITY</a>
+                    	<ul class='depth2'>
+                        	<li><a href='#'>새소식</a></li>
+                            <li><a href='#'>자주 묻는 질문</a></li>
+                            <li><a href='#'>고객의 소리</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='sub6.html'>FRANCHISE</a>
+                    	<ul class='depth2'>
+                        	<li><a href='#'>가맹안내</a></li>
+                            <li><a href='#'>투자비용</a></li>
+                            <li><a href='#'>인테리어</a></li>
+                            <li><a href='#'>자주 묻는 질문</a></li>
+                            <li><a href='#'>개설문의</a></li>
+                            <li><a href='#'>지원 제도</a></li>
+                            <li><a href='#'>해외 산업</a></li>
+                            <li><a href='#'>점주광장</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='sub7.html'>COFFINE STORY</a>
+                    	<ul class='depth2'>
+                        	<li><a href='#'>커핀그루나루 소개</a></li>
+                            <li><a href='#'>Coffee + Wine</a></li>
+                            <li><a href='#'>메뉴 스토리</a></li>
+                            <li><a href='#'>광고자료</a></li>
+                            <li><a href='#'>글로벌 브랜드</a></li>
+                            <li><a href='#'>사회공헌</a></li>
+                            <li><a href='#'>채용정보</a></li>
+                            <li><a href='#'>찾아오시는 길</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+    	</div>
+    </div>
+    <div class='main'>
+    	<a href='#'><img class='btn_quick' src='./images/btn_franchise_go.gif' alt='프랜차이즈/해외산업'></a>
+    	<div class='visual'>
+        	<div class='visual1'><a href='#'></a></div>
+            <div class='visual2'><a href='#'></a></div>
+            <div class='visual3'><a href='#'></a></div>
+            <div class='visual4'><a href='#'></a></div>
+            <div class='visual5'><a href='#'></a></div>
+        </div>
+        <div class='section1'>
+        	<div class='story'>
+            	<h2>Coffine Story</h2>
+                <p>커핀그루나루의 이야기입니다.</p>
+                <a href='#'><img src='./images/btn_main_intro_go.gif' alt='story'></a>
+                <img src='./images/main_intro_img1.jpg' alt='스토리'>
+            </div>
+            <div class='members'>
+            	<a href='#'><img src='./images/mnUo8ZWBcivL4sIg_20160126.png' alt='members'></a>
+            </div>
+            <div class='search'>
+            	<h2>Store Search</h2>
+                <p>커핀그루나루의 이야기입니다.</p>
+                <a href='#'><img src='./images/btn_main_intro_go.gif' alt='story'></a>
+                <img src='./images/main_intro_img2.jpg' alt='스토리'>
+            </div>
+        </div>
+        <div class='section2'>
+			<div class='section2_inner'>
+				<h2>NEW & BEST</h2>
+				<div class='best'>
+					<a href=#><img src='./images/image1.png'></a>
+				</div>
+				<div class='product'>
+					<ul>
+						<li>
+							<a href=#>
+							<img class='product_img' src='./images/list4.png'>
+							<h3>퐁퐁 블랜디드</h3>
+							<h4>Pong Pong Blended</h4>
+							<img class='new' src='./images/co_new.png'>
+							<div class='line'>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href=#>
+							<img class='product_img' src='./images/list1.png'>
+							<h3>레드 와인 소다</h3>
+							<h4>Red Wine Soda</h4>
+							
+							<div class='line'>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href=#>
+							<img class='product_img' src='./images/list2.png'>
+							<h3>로스트 치킨 샌드위치</h3>
+							<h4>Roast Chicken Sandwich</h4>
+							<img class='new' src='./images/ico_best.png'>
+							<div class='line'>
+							</div>
+							</a>
+						</li>
+						<li>
+							<a href=#>
+							<img class='product_img' src='./images/list5.png'>
+							<h3>블루베리스무디</h3>
+							<h4>Blueberry Smoothie</h4>
+						
+							<div class='line'>
+							</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!--/section2-->
+    </div><!--/main-->
+    <div class='section3'>
+    	<div class='section3_inner'>
+        	<div class='tit'>
+            	<h2>프리미엄 액상 블랙 / 스위트</h2>
+                <p>원두추출액을 90%사용하여 진한 커피의 향과 맛을 담았습니다.</p>
+                <a href='#'><span>VIEW MORE ></span></a>
+            </div>
+            <img class='pic' src='./images/main_menu_banner_img.png' alt='뚜비뚜밥'>
+        </div>
+    </div><!--/section3-->
+    <div class='section4'>
+    	<div class='box1'>
+        	<a href='#'><img src='./images/CaYidjnEzb5qtJMk_20160126.jpg' alt='aaa'></a>
+        </div>
+        <div class='box2'>
+        	<div class='top'>
+            	<div class='text_box'>
+            		<h2>사회공헌</h2>
+                	<p>커핀그루나루는 지역사회에<br>이바지하는<br>사회적 책임을 수행합니다.</p>
+                </div>
+            </div>
+            <div class='bottom'>
+            	<div class='text_box'>
+            		<h2>RECRUIT</h2>
+					<p>당신의 꿈과 열정을<br>커핀그루나루와 함께 마음껏 펼치세요</p>
+                </div>
+            </div>
+        </div>
+        <div class='box3'>
+        	<div class='text_box'>
+            	<h2>COFFINE<br>FRANCHISE</h2>
+				<p>커핀그루나루만의 노하우를 가지고<br>성공적인 창업방법을 알려드립니다.</p>
+            </div>
+        </div>
+    </div><!--/section4-->
+    <div class='section5'>
+    	<div class='section5_inner'>
+        	<ul class='tab_btn'>
+            	<li class='btn2 on'><a href='#'>FACE BOOK<span></span></a></li>
+                <li class='btn2 btn_2'><a href='#'>INSTAGRAM<span></span></a></li>
+                <li class='btn2'><a href='#'>TWEETER<span></span></a></li>
+            </ul><!--tab_btn-->
+            <div class="content">
+                <ul class='list'>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.14 10:35<span>53</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14719814_1316046895081257_2032314658303508480_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[오늘 한잔 해야지?] #와인데이 이<br>벤트
+                     10월 14일, 오늘은 와인 마시<br>기 좋은 날~
+                     매력 가득 커핀만의 와<br>인 중
+                     나에게...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.12 14:56<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/sns_default_img.gif' alt='1_1'>
+                  </div>
+                  <p>[패밀리, 골드클럽 인증샷 이벤트]<br> 당첨자 발표...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.10 16:29<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14666234_1122633337815495_3874698133838234023_n.png' alt='1_1'>
+                  </div>
+                  <p>[퍼플멤버스] 패밀리, 골드 #인증샷<br> 이벤트
+                     커핀그루나루만의 알찬 멤버<br>십
+                     퍼플멤버스 <퍼플러 클럽>되기<br> 어렵지 않아요~
+                     지...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.07 15:50<span>18</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14601074_1120297364715759_2006768132100282074_n.png' alt='1_1'>
+                  </div>
+                  <p>퐁퐁퐁, 
+                     어디 까지 모았나요?
+                     커핀<br>그루나루의 대표 메뉴와 일러스트의<br> 만남!
+                     '2017 커핀 아트 캘린더'가<br> 곧 여러분을 찾...</p>
+              </a>
+              </li>
+          </ul><!--facebook-->
+                <ul class='list list2'>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.14 10:35<span>53</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/15538196_107077389789164_1682117340113666048_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[오늘 한잔 해야지?] #와인데이 이<br>벤트
+                     10월 14일, 오늘은 와인 마시<br>기 좋은 날~
+                     매력 가득 커핀만의 와<br>인 중
+                     나에게...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.12 14:56<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/15535509_1205696246177992_449955660285607936_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[패밀리, 골드클럽 인증샷 이벤트]<br> 당첨자 발표...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.10 16:29<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14666234_1122633337815495_3874698133838234023_n.png' alt='1_1'>
+                  </div>
+                  <p>[퍼플멤버스] 패밀리, 골드 #인증샷<br> 이벤트
+                     커핀그루나루만의 알찬 멤버<br>십
+                     퍼플멤버스 <퍼플러 클럽>되기<br> 어렵지 않아요~
+                     지...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.07 15:50<span>18</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14601074_1120297364715759_2006768132100282074_n.png' alt='1_1'>
+                  </div>
+                  <p>퐁퐁퐁, 
+                     어디 까지 모았나요?
+                     커핀<br>그루나루의 대표 메뉴와 일러스트의<br> 만남!
+                     '2017 커핀 아트 캘린더'가<br> 곧 여러분을 찾...</p>
+              </a>
+              </li>
+          </ul><!--facebook2-->
+          <ul class='list list2'>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.14 10:35<span>53</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14566747_935186239952035_6100299010088632320_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[오늘 한잔 해야지?] #와인데이 이<br>벤트
+                     10월 14일, 오늘은 와인 마시<br>기 좋은 날~
+                     매력 가득 커핀만의 와<br>인 중
+                     나에게...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.12 14:56<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14719814_1316046895081257_2032314658303508480_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[패밀리, 골드클럽 인증샷 이벤트]<br> 당첨자 발표...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.10 16:29<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14753246_1125773934168102_2014757061400251573_o.png' alt='1_1'>
+                  </div>
+                  <p>[퍼플멤버스] 패밀리, 골드 #인증샷<br> 이벤트
+                     커핀그루나루만의 알찬 멤버<br>십
+                     퍼플멤버스 <퍼플러 클럽>되기<br> 어렵지 않아요~
+                     지...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.07 15:50<span>18</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/15338356_205327856537727_4903418652646178816_n.jpg' alt='1_1'>
+                  </div>
+                  <p>퐁퐁퐁, 
+                     어디 까지 모았나요?
+                     커핀<br>그루나루의 대표 메뉴와 일러스트의<br> 만남!
+                     '2017 커핀 아트 캘린더'가<br> 곧 여러분을 찾...</p>
+              </a>
+              </li>
+          </ul><!--facebook3-->
+            </div>
+          <!--   <ul class='list'>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.14 10:35<span>53</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14719814_1316046895081257_2032314658303508480_n.jpg' alt='1_1'>
+                  </div>
+                  <p>[오늘 한잔 해야지?] #와인데이 이<br>벤트
+                     10월 14일, 오늘은 와인 마시<br>기 좋은 날~
+                     매력 가득 커핀만의 와<br>인 중
+                     나에게...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.12 14:56<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/sns_default_img.gif' alt='1_1'>
+                  </div>
+                  <p>[패밀리, 골드클럽 인증샷 이벤트]<br> 당첨자 발표...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.10 16:29<span>17</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14666234_1122633337815495_3874698133838234023_n.png' alt='1_1'>
+                  </div>
+                  <p>[퍼플멤버스] 패밀리, 골드 #인증샷<br> 이벤트
+                     커핀그루나루만의 알찬 멤버<br>십
+                     퍼플멤버스 <퍼플러 클럽>되기<br> 어렵지 않아요~
+                     지...</p>
+              </a>
+              </li>
+              <li>
+              <a href='#'>
+                  <h2><img src='./images/main_sns_ico.jpg' alt='1'></h2>
+                  <div class='tit'>
+                      <h3>커핀 그루나루</h3>
+                      <p>10.07 15:50<span>18</span></p>
+                  </div>
+                  <div class='mask'>
+                  <img class='pic' src='./images/14601074_1120297364715759_2006768132100282074_n.png' alt='1_1'>
+                  </div>
+                  <p>퐁퐁퐁, 
+                     어디 까지 모았나요?
+                     커핀<br>그루나루의 대표 메뉴와 일러스트의<br> 만남!
+                     '2017 커핀 아트 캘린더'가<br> 곧 여러분을 찾...</p>
+              </a>
+              </li>
+          </ul> -->
+        </div>
+    </div><!--/section5-->
+    <div class='footer'>
+    	<div class='footer_inner'>
+        	<h2><img src='./images/ft_logo.gif' alt='f로고'></h2>
+            <div class='footer_menu'>
+            <ul>
+            	<li><a href='#'>마케팅 제휴문의</a></li>
+                <li><a href='#'>원·부자제문의</a></li>
+                <li><a href='#'>개인정보취급방침</a></li>
+                <li><a href='#'>이용약관</a></li>
+                <li class='menu m5'><a href='#'>찾아오시는길</a></li>
+                <li class='menu m6'><a href='#'>신규입점제안</a></li>
+                <li class='menu m7'><a href='#'>전체메뉴</a></li>
+            </ul>
+            <p>사업자등록번호 215-87-06529 서울시 송파구 양재대로 71길 1-20 대표자 김은희    고객센터 02-2202-0791 FAX 02-2202-0807<br>COPYRIGHT© 2016 COFFINE GURUNARU ALL RIGHTS RESERVED</p>
+            </div><!--/footer_menu-->
+            <div class='sns'>
+            	<a href="#"><img src='./images/ft_sns_facebook.png' alt=''></a>
+                <a href="#"><img src='./images/ft_sns_instagram.png' alt=''></a>
+                <a href="#" class='voice'><img src='./images/ft_speaker.png' alt=''></a>
+            </div>
+        </div><!--/footer_inner-->
+    </div><!--/footer-->
+</body>
+</html>

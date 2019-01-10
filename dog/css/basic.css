@@ -1,0 +1,178 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/*반응형웹1 css*/
+
+/*기본설정*/
+
+* {margin:0;
+   padding:0;}
+
+body {font-family:"맑은 고딕","malgun gothic",Consolas,Comic Sans MS,sans-serif;
+		font-size:12px;}
+a {text-decoration:none;}
+ul {list-style:none;}
+div, nav, aside, article {box-sizing:border-box;
+								    -moz-box-sizing:border-box;
+								    -webkit-box-sizing:border-box;
+								    -ms-box-sizing:border-box;
+								    -o-box-sizing:border-box;}
+img {border:0;
+		vertical-align:bottom;}
+
+.clearfix:after {display:block;
+					    content:'';
+					    clear:both;}
+
+/*header*/
+#header {padding:10px 0 10px 0;}
+			.site {}
+			.site h1 {font-size:30px;
+					     font-family:"Jeju Gothic", sans-serif;
+					     font-weight:normal;}
+			.site h1 a {color:#000;}
+
+/*nav*/
+#nav {background:#ccc;}
+			.menu {}
+			.menu ul {}
+			.menu li {float:left;
+						  width:auto;}
+			.menu li a {display:block;
+						     color:#000;
+						     padding:15px;
+						     font-size:12px;}
+			.menu li a:hover {background:#eee;}
+
+.header_wrap {position:fixed;
+						width:100%;
+						background:rgba(250,250,250,0.8);
+						z-index:10;}
+
+/*dog*/
+#content {padding:100px 0 20px 0;}
+				.dog {}
+				.dog a {display:block;
+							border:1px solid #ddd;
+							color:#000;
+							margin:10px 0;}
+				.dog a:hover {box-shadow:0 0 20px #ccc;}
+				.dog img {max-width:100%;
+							   height:auto;}
+				.dog h1 {margin:10px 0 10px 15px;
+							 font-size:15px;}
+				.dog p {margin:0 0 15px 15px;}
+				.dog .more {background:#555;
+								  padding:5px 15px;
+								  display:inline-block;
+								  color:#fff;}
+				.dog .more i {margin-left:10px;}
+				
+				.picup {position:relative;}
+
+
+
+
+/*badge*/
+.badge {text-align:center;
+			width:120px;
+			height:120px;
+			padding-top:35px;
+			background:#ccc;
+			border-radius:50%; /*반지름의 크기로.. 동그란원이됨 50%가편함*/
+			position:absolute;
+			right:-15px;
+			top:60%;
+			box-shadow:0 0 10px #aaa;}
+.badge i {font-size:40px;
+			  display:block;}
+
+
+
+/*pagenation*/
+.pagenation {text-align:center;}
+.pagenation ul {display:inline-block;}
+.pagenation ul li {width:auto;
+							float:left;}
+.pagenation a {display:block;
+						margin:0 5px;
+						padding:5px 10px;
+						border:1px solid #aaa;
+						color:#000;}
+.pagenation a.active {background:#eee;}
+.pagenation a:hover {background:#ccc;}/*hover를 뒤에 쓰면 모두 적용이 된다. active를 뒤에쓰면 active만 적용ㄴㄴ*/
+
+
+
+
+
+/*footer*/
+#footer {padding:10px 0 10px 0;}
+			  .copyright {border-top:1px solid #ddd;}
+			  .copyright p {color:#666;}
+
+/*599px보다 작았을때-웹사이트*/
+@media (max-width:599px) {
+
+											  #content {padding:80px 0 20px 0;}
+											  .menu li a {padding:10px 3px;
+															 font-size:11px;}
+											  .site h1 {font-size:20px;}
+											  .dog p {padding-right:10px;}
+
+											  #header {padding:10px 0;}
+
+											  /*sns*/
+											  .share span {display:inline-block;
+																   text-indent:-9999px;}
+
+												/*relation*/
+											.relation{padding:10px;}
+											.relation ul li{width:50%;}
+											.relation ul li:nth-child(3){clear:both;}
+
+											/*badge*/
+											 .badge {top:20%;
+														 right:10px;
+														 transform-origin:top right;
+														 transform:scale(0.5);
+														 -webkit-transform:scale(0.5);
+														 -webkit-transform-origin:top right;
+														 -ms-transform:scale(0.5);
+														 -ms-transform-origin:top right;}
+
+											/*content_bottom*/
+											.content_bottom {width:50%
+																		float:left;}
+
+
+											 }
+/*600px이상*/
+@media (min-width:600px){
+											  .content_bottom .dog {float:left;
+																				 width:50%;}
+											  .content_bottom .dog:nth-child(odd) {clear:both;padding-right:15px;}
+											  .content_bottom .dog:nth-child(even) {padding-left:15px;}
+											 
+														 
+												 }
+
+/*600px이상 768px이하*/
+@media (min-width:600px) and (max-width:748px){
+																					 /*badge*/
+																					 .badge {top:50%;
+																								 right:15px;}
+																								 
+																					 }
+
+/*768px보다 컸을때-웹사이트*/
+@media (min-width:768px) {
+											  .pickup h1 {font-size:17px;}
+											  }
+
+/*1040px보다 컸을때-웹사이트*/
+@media (min-width:1040px) {
+											  #header, .menu, #content, .copyright {width:1000px;
+																								margin:0 auto;}
+											 }

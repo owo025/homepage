@@ -1,0 +1,573 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>reSportsac</title>
+
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.12.4.min.js" /></script>
+
+<script>
+$(document).ready(function(){
+	$(".header .gnb .gnb_menu>li").mouseenter(function(){
+		$(this).find(".depth").stop().fadeIn(600);
+	});
+	
+	$(".header .gnb .gnb_menu>li").mouseleave(function(){
+		$(this).find(".depth").stop().fadeOut(400);
+	});
+	
+	$(".main .section1 .pic li").mouseenter(function(){
+		$(this).find(".cover").stop().fadeIn();
+	});
+	$(".main .section1 .pic li").mouseleave(function(){
+		$(this).find(".cover").stop().fadeOut();
+	});
+	
+	$(".main .section2 .bag>li").mouseenter(function(){
+		$(this).find(".cover2").stop().fadeIn();
+	});
+	$(".main .section2 .bag>li").mouseleave(function(){
+		$(this).find(".cover2").stop().fadeOut();
+	});
+	
+	$(".main .section2 .bag_list4 li").mouseenter(function(){
+		$(this).find(".line").stop().animate({"right":'0%',"opacity":'1'})
+	});
+	$(".main .section2 .bag_list4 li").mouseleave(function(){
+		$(this).find(".line").stop().animate({"right":'-100%',"opacity":'0'})
+	});
+	
+	$(".main .section2 .bag_list5 li").mouseenter(function(){
+		$(this).find(".line").stop().animate({"right":'0%',"opacity":1},800);
+	});
+	$(".main .section2 .bag_list5 li").mouseleave(function(){
+		$(this).find(".line").stop().animate({"right":'-100%',"opacity":0},800);
+	});
+	
+	$(".main .section3 .section3_inner li").mouseenter(function(){
+		$(this).find(".sec_t").stop().fadeIn();
+	});
+	$(".main .section3 .section3_inner li").mouseleave(function(){
+		$(this).find(".sec_t").stop().fadeOut();
+	});
+	
+	$(".main .section3 .section3_inner2 li").mouseenter(function(){
+		$(this).find(".sec_t2").stop().animate({"left":"0%","opacity":1},800);
+	});
+	$(".main .section3 .section3_inner2 li").mouseleave(function(){
+		$(this).find(".sec_t2").stop().animate({"left":"-100%","opacity":0},800);
+	});
+	
+	$(".main .section3 .section3_inner3 li").mouseenter(function(){
+		$(this).find(".sec_t3").stop().animate({'bottom':0,'opacity':1});
+		$(this).find('img').stop().animate({'top':'-80px'});
+	});
+	$(".main .section3 .section3_inner3 li").mouseleave(function(){
+		$(this).find(".sec_t3").stop().animate({'bottom':'-80px','opacity':0});
+		$(this).find('img').stop().animate({'top':0});
+	});
+	
+	$(".footer .sns li").mouseenter(function(){
+		$(this).find('img:first-child').stop().animate({'opacity':0},'duration');
+		$(this).find('img:nth-child(2)').stop().animate({'opacity':1},'duration');
+	});
+	$(".footer .sns li").mouseleave(function(){
+		$(this).find('img:first-child').stop().animate({'opacity':1},'duration');
+		$(this).find('img:nth-child(2)').stop().animate({'opacity':0},'duration');
+	});
+	
+	$(".illust .illust_list li").mouseenter(function(){
+		$(this).find('.cancer').stop().animate({'top':'220px','opacity':1});
+	});
+	$(".illust .illust_list li").mouseleave(function(){
+		$(this).find('.cancer').stop().animate({'top':'270px','opacity':1});
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+	<div class="header_inner">
+    	<ul class="utill_left">
+        	<li><a href="#">Login</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">My Page</a></li>
+            <li><a href="#">Wish List</a></li>
+        </ul>
+        
+        <h1><a href="index.html"><img src="./images/logo.png" alt="레스포색" /></a></h1>
+        
+        <ul class="utill_right">
+        	<li class="lepo"><a href="#">LEPOgram</a></li>
+            <li class="cart"><a href="#">Cart</a></li>
+            <li class="search"><a href="#">Search</a></li>
+        </ul>
+
+    </div><!--header_inner end-->
+            
+    <div class="gnb">
+    	<ul class="gnb_menu">
+            <li>
+            <a href="#" class="list1" >
+            WHAT'S NEW
+            </a>
+            <ul class="depth depth1">
+            	<li><a href="#">Monthly Event</a></li>
+                <li><a href="#">Shop Opening</a></li>
+                <li><a href="#">Press Release</a></li>
+                <li><a href="#">Seasonal Leaflet</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#" class="list2">
+            SHOP BY STYLE
+            </a>
+            <ul class="depth depth1">
+            	<li><a href="#">All</a></li>
+                <li><a href="#">New Styles</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Mini Bags</a></li>
+                <li><a href="#">Handbags</a></li>
+                <li><a href="#">Totes</a></li>
+                <li><a href="#">Backpacks</a></li>
+                <li><a href="#">Travel</a></li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Luggage</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#" class="list3">
+            CLASSIC
+            </a>
+            <ul class="depth depth2">
+            	<li><a href="#">All</a></li>
+                <li><a href="#">KR Exclusive K364</a></li>
+                <li><a href="#">Standard</a></li>
+                <li><a href="#">Solid</a></li>
+                <li><a href="#">Print / Pattern</a></li>
+                <li><a href="#">School Backpack</a></li>
+                <li><a href="#">Luggage</a></li>
+                <li><a href="#">Baby</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#" class="list4">
+            COLLECTION
+            </a>
+            <ul class="depth depth3">
+            	<li><a href="#">All</a></li>
+                <li><a href="#">City</a></li>
+                <li><a href="#">Peanuts</a></li>
+                <li><a href="#">Mickey & Minnie</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#" class="list5">
+            ESSENTIAL
+            </a>
+            <ul class="depth depth4">
+            	<li><a href="#">All</a></li>
+                <li><a href="#">Liberty Art Fabrics</a></li>
+                <li><a href="#">Print / Pattern</a></li>
+                <li><a href="#">Solid</a></li>
+            </ul>
+            </li>
+            <li>
+            <a href="#" class="list6">
+            SALE
+            </a>
+            <ul class="depth depth5">
+            	<li><a href="#">캐리어 30%</a></li>
+                <li><a href="#">MEN`S</a></li>
+                <li><a href="#">11월의 컬러데이</a></li>
+            </ul>
+            </li>
+            <li><a href="#">박소담'S PICK</a></li>
+        </ul>
+    </div>
+        
+</div><!--header end-->
+
+<div class="main">
+
+    <div class="video">
+    	<iframe src="https://player.vimeo.com/video/176418233" width="960" height="560" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div><!--video end-->
+    
+    <div class="section1">
+    	<ul class="pic">
+        	<li>
+            <a href="#">
+            <div class="cover">
+            </div>
+            <img src="./images/FA11_ Desk_1.jpg" alt="" />
+            <p><span>[레스포색 2016 FW 신상품 출시 ]</span><br/>
+									F/W 신상품으로 먼저, 패셔니스타가 되어 보세요!
+								</p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover">
+            </div>
+            <img src="./images/FA1-2_ Desk.jpg" alt="" />
+            <p><span>[레스포색 X 피너츠의, NEW 콜라보레이션]</span><br/>
+									너무나도 귀엽고, 사랑스러운 피넛츠 컬렉션 ♡
+								</p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover">
+            </div>
+            <img src="./images/dd.jpg" alt="" />
+            <p><span>[리버티 x 레스포색 콜라보레이션]</span><br/>
+									영국의 패브릭 컴퍼니 리버티와의 특별한 만남!
+								</p>
+            </a>
+            </li>
+        </ul>
+    </div><!--section1 end-->
+    
+    <div class="section2">
+    	<p>NEW ITEMS</p>
+        <hr />
+    	<ul class="bag bag_list">
+        	<li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/2293P886.jpg" />
+            <p>CR SMALL WEEKENDER<br/>
+            <span class="t1">Sun Multi Gravel C</span><br/>
+            <span class="t2">228,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="new">
+            	<img src="./images/tag_new.png" />
+            </div>
+            <img src="./images/2296C096.jpg" />
+            <p>FUNCTIONAL BACKPACK<br/>
+            <span class="t1">Classic Navy C</span><br/>
+            <span class="t2">232,000원</span><br/>
+            <span class="t3">매장문의</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/4230C092.jpg" />
+            <p>ESSENTIAL HOBO<br/>
+            <span class="t1">Cherries Jubilee C</span><br/>
+            <span class="t2">172,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/2273P859.jpg" />
+            <p>SMALL UPTOWN SATCHEL<br/>
+            <span class="t1">Patchwork Blue C</span><br/>
+            <span class="t2">168,000원</span></p>
+            </a>
+            </li>
+        </ul>
+        
+        <ul class="bag bag_list2">
+        	<li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/8239G058.jpg" />
+            <p>Shelby Crossbody<br/>
+            <span class="t1">Happiness Allover</span><br/>
+            <span class="t2">112,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/3247G075.jpg" />
+            <p>Haliey Tote<br/>
+            <span class="t1">Happy Snoopy</span><br/>
+            <span class="t2">146,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/7812G062.jpg" />
+            <p>Basic Backpack<br/>
+            <span class="t1">Friend Parade</span><br/>
+            <span class="t2">216,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="new">
+            	<img src="./images/tag_new.png" />
+            </div>
+            <img src="./images/7520K364.jpg" />
+            <p>Classic Hobo<br/>
+            <span class="t1">Mulberry Garden</span><br/>
+            <span class="t2">128,000원</span></p>
+            </a>
+            </li>
+        </ul>
+        
+        
+    	<ul class="bag bag_list3">
+            <p>HOT ITEMS</p>
+            <hr />
+        	<li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/3247G075.jpg" />
+            <p>Haliey Tote<br/>
+            <span class="t1">Happy Snoopy</span><br/>
+            <span class="t2">146,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="new">
+            	<img src="./images/tag_new.png" />
+            </div>
+            <img src="./images/2279P995.jpg" />
+            <p>EVERYDAY BAG<br/>
+            <span class="t1">Amy Jane</span><br/>
+            <span class="t2">238,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="new">
+            	<img src="./images/tag_new.png" />
+            </div>
+            <img src="./images/7520K364.jpg" />
+            <p>Classic Hobo<br/>
+            <span class="t1">Mulberry Garden</span><br/>
+            <span class="t2">128,000원</span></p>
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <img src="./images/7507P928.jpg" />
+            <p>Deluxe Everyday Bag<br/>
+            <span class="t1">Mickey Loves Minnie</span><br/>
+            <span class="t2">152,000원</span></p>
+            </a>
+            </li>
+        </ul>
+        
+        
+    	<ul class="bag bag_list4">
+            <p>RECENTLY UPDATED PATTERNS</p>
+            <hr />
+        	<li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Bandana Lace  C</p>
+            </div>
+            <img src="./images/Circle_list_94.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Flower Cluster Khaki</p>
+            </div>
+            <img src="./images/Circle_list_67.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Gingham Classic Red C</p>
+            </div>
+            <img src="./images/Circle_list_150.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Sunshine Dot Black </p>
+            </div>
+            <img src="./images/Circle_list_7.jpg" />
+            </a>
+            </li>
+        </ul>
+        
+        <ul class="bag bag_list5">
+        	<li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Amy Jane</p>
+            </div>
+            <img src="./images/Circle_list_105.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Sun Multi Pink C</p>
+            </div>
+            <img src="./images/Circle_list_69.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>SAILING FLORAL RED</p>
+            </div>
+            <img src="./images/Circle_list_135.jpg" />
+            </a>
+            </li>
+            <li>
+            <a href="#">
+            <div class="cover2">
+            </div>
+            <div class="line">
+            	<p>Roadtrip Vaca</p>
+            </div>
+            <img src="./images/Circle_list_151.jpg" />
+            </a>
+            </li>
+        </ul>
+        
+    </div><!--section2 end-->
+
+<div class="site_map">
+	
+    <div class="site_map_inner">
+    	<ul>
+        	<li><h2>Shop by Style</h2></li>
+        	<li><a href="#">New Styles</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Mini Bags</a></li>
+            <li><a href="#">Handbags</a></li>
+            <li><a href="#">Totes</a></li>
+            <li><a href="#">Backpacks</a></li>
+            <li><a href="#">Travel</a></li>
+            <li><a href="#">Baby</a></li>
+            <li><a href="#">Luggage</a></li>
+        </ul>
+        
+        <ul>
+        	<li><h2>What’s New</h2></li>
+        	<li><a href="#">Monthly Event</a></li>
+            <li><a href="#">Shop Opening</a></li>
+            <li><a href="#">Press Release</a></li>
+            <li><a href="#">Seasonal Leaflet</a></li>
+        </ul>
+        
+        <ul>
+        	<li><h2>About Us</h2></li>
+        	<li><a href="#">About LeSportsac</a></li>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">RECRUIT</a></li>
+        </ul>
+        
+        <ul>
+        	<li><h2>Brand Gallery</h2></li>
+        	<li><a href="#">Classic Print</a></li>
+            <li><a href="#">Collaboration Archive</a></li>
+            <li><a href="#">Seasonal Archive</a></li>
+            <li><a href="#">Brand film</a></li>
+            <li><a href="#">Leaflet Archive</a></li>
+        </ul>
+        
+        <ul>
+        	<li><h2>Store Location</h2></li>
+        	<li><a href="#">Store Location</a></li>
+        </ul>
+        
+        <ul>
+        	<li><h2>Customer Service</h2></li>
+        	<li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보취급방침</a></li>
+            <li><a href="#">교환/반품안내</a></li>
+            <li><a href="#">배송안내</a></li>
+            <li><a href="#">LeMon Point / 회원등급</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">정품백서</a></li>
+        </ul>
+    </div><!--site_map_inner end-->
+    
+</div><!--site_map end-->
+
+<div class="footer">
+	<p>온라인 고객 서비스 02.551.1144 / 상호 (주)스타럭스 / 대표자 성명 박상배 / 통신판매업등록번호 서울 강남-4364호
+사업장 주소 서울특별시 강남구 영동대로 511, 트레이드 타워 38층 3806호 / 사업자 등록번호 120-86-24028<br/>
+	<span>Copyright (c) 2015 LESPORTSAC. All Rights Reserved.</span></p>
+    
+    <div class="sns">
+    	<ul>
+        	<li>
+            <a href="#" class="sns1">
+            <img src="./images/ico_facebook.png" />
+            <img src="./images/ico_facebook_on.png" />
+            </a>
+            </li>
+            <li>
+            <a href="#" class="sns2">
+            <img src="./images/ico_BLOG.png" />
+            <img src="./images/ico_BLOG_on.png" />
+            </a>
+            </li>
+            <li>
+            <a href="#" class="sns3">
+            <img src="./images/ico_instagram2.png" />
+            <img src="./images/ico_instagram2_on.png" />
+            </a>
+            </li>
+        </ul>
+    </div><!--sns end-->
+    
+    <button type="button">
+    	FAMILY SITE
+    </button>
+</div><!--footer end-->
+
+</body>
+
+</html>

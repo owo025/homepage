@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+/*기본설정*/
+* {margin:0;
+    padding:0;}
+body {font-family:"맑은 고딕","malgun gothic",Consolas,Comic Sans MS,sans-serif;
+		font-size:12px;}
+a {text-decoration:none;}
+ul {list-style:none;}
+img {border:0;
+		vertical-align:none;}
+div, nav, aside, article, header {box-sizing:border-box;
+												 -moz-box-sizing:border-box;
+												 -webkit-box-sizing:border-box;
+											 	 -ms-box-sizing:border-box;
+												 -o-box-sizing:border-box;}
+
+.clear:after {content:"";
+					display:block;
+					clear:both;}
+/*레이아웃을 잡을때는 id사용이 간편하고 좋다 한번만 써도 된당*/
+
+/*header*/
+#header {padding-top:10px;}
+
+	#logo_wrap {width:50%}
+
+		#logo {}
+		#logo h1 {}
+		#logo h1 a {}
+
+	#nav {}
+			.menu {}
+			.menu ul {}
+			.menu ul li {float:left;
+							   width:auto;}
+			.menu ul li a {display:block;
+								  padding:10px 15px;
+								  color:#000;}
+			.menu ul li a:hover {background:#eee;}
+
+/*pickup*/
+#pickup {padding-top:20px;}
+			.pickup-1, .pickup-2, .pickup-3 {padding-bottom:10px;}
+
+			.summery {}
+			.summery a {display:block;
+								background:#222;
+								color:#fff;
+								text-align:center;}
+			.summery a:hover {opacity:0.8;}
+			.summery i {display:block;
+								padding-top:40px;
+								padding-bottom:40px;
+								font-size:38px;}
+			.summery .fa-database {background:#bfbd13;}
+			.summery .fa-bar-chart {background:#c58839;}
+			.summery .fa-envelope {background:#859f46;}
+			.summery h1 {padding:5px 0;
+								  font-size:20px;
+								  font-weight:100;}
+			.summery p {padding:15px 0;
+								background:#524e3c;}
+
+/*photo*/
+#photo {position:relative;}
+			.topimg {width:100%;
+						 height:auto;}
+			.catch {position:absolute;
+					  left:3%;
+					  bottom:7%;
+					  font-size:18px;
+					  padding:15px;
+					  background:rgba(255,255,255,0.6);}
+
+/*info*/
+#info {padding-top:20px;
+		  padding-bottom:30px;}
+	
+	#notice {border:5px solid #ddd;
+				   padding-top:20px;}
+	#notice h1 {font-size:15px;
+						color:#555;
+						margin-bottom:5px;}
+	#notice ul {}
+	#notice ul li {}
+	#notice ul li a {color:#000;
+							display:block;
+						    padding:5px;
+							border-bottom:1px dotted #eee;}
+	#notice ul li a:hover {background:#eee;}
+	#notice time {color:#888;
+						   font-weight:900;
+						   float:left;
+						   width:60px;}
+	#notice .text {float:none;
+						    width:auto;
+							margin-left:60px;}
+	#notice a:after {content:"";
+							   display:block;
+							   clear:both;}
+
+	#sns {}
+	#sns ul {}
+	#sns ul li {}
+	#sns ul li a {display:block;
+						padding:5px;
+						margin-bottom:10px;
+						color:#fff;
+						border-radius:4px;}
+	#sns ul li a:hover {opacity:0.8;}
+
+	#sns .share_t {background:#55acee;}
+
+	#sns .share_f {background:#3b5998;}
+
+	#sns .share_i {background:#dd4b39;}
+	#sns i {margin-right:10px;
+				font-size:20px;
+				vertical-align:middle;}
+
+	/*sns_info*/
+	.sns_info {position:relative;
+				 background:#ddd;}
+	.sns_info:after {position:absolute;
+						 bottom:-30px;
+						 left:50%;
+						 border:solid transparent;
+						 content:"";
+						 width:0;
+						 height:0;
+						 margin-left:-15px;
+						 pointer-events:none;
+						 border-color:rgba(221,221,221,0);
+						 border-top-color:#ddd;
+						 border-width:15px;}
+	.sns_info p {background:#ddd;
+					padding:10px;
+					margin-bottom:15px;
+					text-align:center;}
+
+/*footer*/
+#footer {padding:10px 0;
+			  background:#ddd;
+			  clear:both;}
+			.copyright {}
+			.copyright p {color:#666;
+								text-align:right;}
+			.copyright p:last-child {color:#333;
+												 font-size:11px;}
+
+/*박스 좌우여백 설정*/
+#header, #info, #footer, .pickup {padding-left:15px;
+													 padding-right:15px;}
+
+/*미디어쿼리 (반응형)*/
+
+/*359이하*/
+@media (max-width:359px) {
+									#logo .topimg {width:225px;
+														height:auto;}
+									}
+/*599px 이하*/
+@media (max-width:599px) {
+
+											  .menu ul li a {font-size:11px;
+																	padding:10px 7px;}
+											  .copyright p {font-size:10px;}
+											  #notice {border:2px solid #ddd;
+															 padding:5px;}
+											  .notice_wrap {margin-bottom:20px;}
+											  }
+
+/*785px 이하*/
+@media (max-width:785px) {
+									#menu_btn {padding: 6px 12px;
+													 border: 1px solid #aaa;
+													 border-radius: 5px;
+													 background: #fff;
+													 position: absolute;
+													 top:10px;
+													 right:10px;
+												     cursor: pointer;}
+									#menu_btn:hover {background: #ddd;}
+									#menu_btn:focus {outline: none;}
+									#menu_btn i {color:#888;
+													   font-size: 18px;}
+									#menu_btn span {display:inline-block;
+													       text-indent:-9999px;}
+
+											.menu {display: none;}
+											.menu li a {display: block;
+														  padding:5px;
+														  color: #000;
+														  font-size:14px;}
+											.menu li a:hover {background: #eee;}
+									}
+
+/*786px 이상*/
+@media (min-width:786px) {
+
+											  #logo_wrap {float:left;
+																   width:auto;}
+
+											  #nav {float:right;
+														width:auto;}
+											  .notice_wrap {float:left;
+																	 width:70%;}
+											  .sns_wrap {float:left;
+																width:30%;}
+
+											  .#pickup:after {display:block;
+																		content:"";
+																		clear:both;}
+											  .pickup-1 {float:left;
+															  width:32%;
+															  margin-right:2%;}
+											  .pickup-2 {float:left;
+															  width:32%;
+															  margin-right:2%;}
+											  .pickup-3 {float:left;
+															  width:32%;}
+
+												/*공지사항 sns 가로정렬*/
+											  #info:after {display:block;
+																  content:"";
+																  clear:both;}
+
+											  .notice_wrap {float:left;
+																	   width:70%;
+																	   padding-right:35px;
+																	   box-sizing:border-box;
+																	  -moz-box-sizing:border-box;
+																	  -webkit-box-sizing:border-box;
+																	  -ms-box-sizing:border-box;
+																	  -o-box-sizing:border-box;}
+
+											  .sns_wrap {float:left;
+																  width:30%;}
+
+											  #menu_btn{display: none;}
+
+											  #menu{display: block !important}
+															.menu li a{
+																display: block;
+																padding:10px 15px;
+																color: #000;
+																font-size:14px;
+															}
+															.menu li a:hover{
+																background: #eee;
+															}
+															.menu ul:after{
+																content: '';
+																display: block;
+																clear: both;
+															}
+															.menu li{
+																float: left;width:auto;
+															}
+											  }
+
+/*1190px 이상*/
+@media (min-width:1190px) {
+												#header {border-bottom:1px solid #ccc;
+																margin-bottom:20px;}
+												#header_inner, #photo, #picup, #info, .copyright {width:1140px;
+																																 margin:0 auto;}
+
+											  }
